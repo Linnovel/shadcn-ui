@@ -1,6 +1,5 @@
-import { redirect } from "next/dist/server/api-utils";
+import { redirect } from "next/navigation";
 
 export default function Home() {
- 
-  redirect("dashboard/home")
+  redirect("dashboard/home");
 }

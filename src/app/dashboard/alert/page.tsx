@@ -1,11 +1,28 @@
-import React from 'react'
+import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
+import React from "react";
+import { Terminal } from "lucide-react";
 
 const page = () => {
   return (
-    <div>
+    <div className="grid gap-3">
       <h1>Alert page</h1>
-    </div>
-  )
-}
+      <Alert>
+        <Terminal className="h-4 w-4" />
+        <AlertTitle>Heads up!</AlertTitle>
+        <AlertDescription>
+          You can add components to your app using the cli.
+        </AlertDescription>
+      </Alert>
 
-export default page
+      <Alert variant="success">
+        <Terminal className="h-4 w-4" />
+        <AlertTitle>Heads up!</AlertTitle>
+        <AlertDescription>
+          You can add components to your app using the cli.
+        </AlertDescription>
+      </Alert>
+    </div>
+  );
+};
+
+export default page;
